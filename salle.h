@@ -11,13 +11,14 @@ using namespace std;
 class Salle {
 	public:
 		Salle(Point _haut_gauche, Point _bas_droite,vector<Point>& _portes);
+		void DessinerSalle(Carte&);
 	private:
 		Point haut_gauche;
 		Point bas_droite;
 		Point centre;
 		vector<Point> portes;
 		//void calculerCentre();
-		void DessinerSalle(Carte&);
+		
 };
 
 #endif

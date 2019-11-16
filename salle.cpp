@@ -27,6 +27,6 @@ void Salle::DessinerSalle(Carte& carte)
 		int x = portes[i].x;
 		int y = portes[i].y;
 
-		carte.tableau[x][y] = 0;
+		carte.tableau[y][x] = 0;
 	}
 }
