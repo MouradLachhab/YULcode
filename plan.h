@@ -11,7 +11,7 @@
 class Plan {
 	public:
 		Plan();
-		void static DessinerPlan1(Carte&);
+		std::vector<Salle> static DessinerPlan1(Carte&);
 };
 
 #endif

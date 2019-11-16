@@ -15,7 +15,7 @@ int main(int argc, char** argv )
 {
 	Carte carte;
 
-	Plan::DessinerPlan1(carte);
+	vector<Salle> listeSalle = Plan::DessinerPlan1(carte);
 
 	Visualizer v;
 

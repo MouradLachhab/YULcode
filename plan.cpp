@@ -10,7 +10,7 @@ using namespace std;
 Plan::Plan()
 {}
 
-void Plan::DessinerPlan1(Carte& plan)
+vector<Salle> Plan::DessinerPlan1(Carte& plan)
 {
 	vector<Coord> porteRdc;
 	porteRdc.push_back(Coord(3,0));
@@ -79,4 +79,21 @@ void Plan::DessinerPlan1(Carte& plan)
 	wc_2.DessinerSalle(plan);
 	poteau_1.DessinerSalle(plan);
 	poteau_2.DessinerSalle(plan);
+
+
+
+	vector<Salle> listeSalle;
+	listeSalle.push_back(rdc);
+	listeSalle.push_back(openSpace_1);
+	listeSalle.push_back(openSpace_2);
+	listeSalle.push_back(wc_1);
+	listeSalle.push_back(salleReunion);
+	listeSalle.push_back(cuisine);
+	listeSalle.push_back(ascenseur);
+	listeSalle.push_back(salleConference);
+	listeSalle.push_back(wc_2);
+	//On ne peut pas aller aux poteaux
+
+	return listeSalle;
+
 }
