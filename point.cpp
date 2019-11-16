@@ -17,3 +17,13 @@ bool Point::isNeighbour(const Point& point) const {
 		return true;
 	return false;
 }
+
+bool Point::operator==(const Point& autre) const {
+	return this->x == autre.x && this->y == autre.y;
+}
+
+bool Point::operator<(const Point& autre) const {
+	if (this->x == autre.x)
+		return this->y < autre.y;
+	return this->x < autre.x;
+}
