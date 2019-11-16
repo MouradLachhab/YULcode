@@ -8,8 +8,7 @@ class Point {
 		Point(){}
 		Point(double x, double y);
 		Point(const Point&);
-
-		double distance(const Point&) const;
+		bool isNeighbour(const Point&) const;
 
 	private:
 		double x;

@@ -16,6 +16,8 @@ class Case {
 		Point point;
 		int cost;
 		int estimation;
+
+	friend vector<Point> algo (Point start, Point end, int sizeTab);
 };
 
 #endif
