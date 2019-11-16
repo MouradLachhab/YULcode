@@ -26,8 +26,8 @@ vector<Coord> Carte::algo(Coord& start, Coord& end) {
 		for (int j = 0; j < m; j += 1) {
 			etage[i][j].point.y = i;
 			etage[i][j].point.x = j;
-			etage[i][j].cost = 9999;
-			etage[i][j].estimation = 9999;
+			etage[i][j].cost = 99999;
+			etage[i][j].estimation = 99999;
 		}
 	}
 
@@ -57,7 +57,7 @@ vector<Coord> Carte::algo(Coord& start, Coord& end) {
 		tree.erase(iter);
 		if (c.point == end) {
 			vector<Coord> result;
-			result.push_back(end);
+			// result.push_back(end);
 			Coord tmp = map[end];
 			while (map.find(tmp) != map.end()) {
 				result.push_back(tmp);

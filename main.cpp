@@ -21,7 +21,12 @@ int main(int argc, char** argv )
 
     v.ChargerCarte(carte);
 
-    v.AfficherChemin(vector<Coord>(0));
+	// for (int i = 0; i < listeSalle.size(); ++i)
+	// 	cout << listeSalle[i].centre.x << " " << listeSalle[i].centre.y << endl;
+
+	vector<Coord> vec = carte.algo(listeSalle[8].centre, listeSalle[6].centre);
+
+    v.AfficherChemin(vec);
     // Initialiser la carte et les informations
 
     // Loop sur nos faux meetings

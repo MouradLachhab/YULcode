@@ -12,7 +12,7 @@ class Coord {
 		bool operator==(const Coord&) const;
 		bool operator<(const Coord&) const;
 
-	private:
+	// private:
 		int x;
 		int y;
 

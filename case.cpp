@@ -14,3 +14,7 @@ void Case::refineEstimation(const Coord& end) {
 bool Case::operator<(const Case& c) const {
 	return this->estimation < c.estimation;
 }
+
+bool Case::operator<=(const Case& c) const {
+	return this->estimation <= c.estimation;
+}

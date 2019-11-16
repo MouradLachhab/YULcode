@@ -1,3 +1,3 @@
-/home/mmou/Documents/YULcode/CMakeFiles/rebuild_cache.dir
-/home/mmou/Documents/YULcode/CMakeFiles/main.dir
-/home/mmou/Documents/YULcode/CMakeFiles/edit_cache.dir
+/home/sevla/Desktop/YULcode/CMakeFiles/rebuild_cache.dir
+/home/sevla/Desktop/YULcode/CMakeFiles/main.dir
+/home/sevla/Desktop/YULcode/CMakeFiles/edit_cache.dir

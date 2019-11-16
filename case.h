@@ -11,6 +11,7 @@ class Case {
 		int heuristique(const Coord& c, const Coord& g) const;
 		void refineEstimation(const Coord& end);
 		bool operator<(const Case&) const;
+		bool operator<=(const Case&) const;
 
 	private:
 		Coord point;
