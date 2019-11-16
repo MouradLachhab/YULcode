@@ -40,6 +40,8 @@ int main(int argc, char** argv )
 	openSpace_2.DessinerSalle(carte);
 	wc_1.DessinerSalle(carte);
     v.ChargerCarte(carte);
+
+    v.AfficherChemin(vector<Coord>());
     // Initialiser la carte et les informations
 
     // Loop sur nos faux meetings

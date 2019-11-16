@@ -1,6 +1,6 @@
 #include "salle.h"
 
-Salle::Salle(Coord _haut_gauche, Coord _bas_droite, vector<Coord>& _portes)
+Salle::Salle(Coord _haut_gauche, Coord _bas_droite, std::vector<Coord>& _portes)
 : haut_gauche(_haut_gauche), bas_droite(_bas_droite), portes(_portes)
 {
 	centre.x = (haut_gauche.x + bas_droite.x ) / 2;

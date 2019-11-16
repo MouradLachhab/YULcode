@@ -123,33 +123,6 @@ main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-algorithm.o: algorithm.cpp.o
-
-.PHONY : algorithm.o
-
-# target to build an object file
-algorithm.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/algorithm.cpp.o
-.PHONY : algorithm.cpp.o
-
-algorithm.i: algorithm.cpp.i
-
-.PHONY : algorithm.i
-
-# target to preprocess a source file
-algorithm.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/algorithm.cpp.i
-.PHONY : algorithm.cpp.i
-
-algorithm.s: algorithm.cpp.s
-
-.PHONY : algorithm.s
-
-# target to generate assembly for a file
-algorithm.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/algorithm.cpp.s
-.PHONY : algorithm.cpp.s
-
 carte.o: carte.cpp.o
 
 .PHONY : carte.o
@@ -348,9 +321,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... main"
 	@echo "... edit_cache"
-	@echo "... algorithm.o"
-	@echo "... algorithm.i"
-	@echo "... algorithm.s"
 	@echo "... carte.o"
 	@echo "... carte.i"
 	@echo "... carte.s"
