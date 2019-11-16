@@ -46,10 +46,10 @@ vector<Coord> Carte::algo(Coord& start, Coord& end) {
 
 	map<Coord, Coord> map;
 
-	etage[start.x][start.y].cost = 0;
-	etage[start.x][start.y].refineEstimation(end);
+	etage[start.y][start.x].cost = 0;
+	etage[start.y][start.x].refineEstimation(end);
 
-	tree.insert(etage[start.x][start.y]);
+	tree.insert(etage[start.y][start.x]);
 
 	while (!tree.empty()) {
 		set<Case>::iterator iter = tree.begin();
@@ -66,12 +66,12 @@ vector<Coord> Carte::algo(Coord& start, Coord& end) {
 			return result;
 		}
 		else
-			visited[c.point.x][c.point.y] = true;
+			visited[c.point.y][c.point.x] = true;
 		for (int i = 0; i < n; i += 1) {
 			for (int j = 0; j < m; j += 1) {
 				if (etage[i][j].point.isNeighbour(c.point) &&
 					this->tableau[etage[i][j].point.x][etage[i][j].point.y] != 1 &&
-					!visited[etage[i][j].point.x][etage[i][j].point.y]) {
+					!visited[etage[i][j].point.y][etage[i][j].point.x]) {
 					if (tree.find(etage[i][j]) == tree.end()) {
 						etage[i][j].cost = c.cost + 1;
 						etage[i][j].refineEstimation(end);
