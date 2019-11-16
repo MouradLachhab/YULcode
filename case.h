@@ -17,7 +17,7 @@ class Case {
 		int cost;
 		int estimation;
 
-	friend vector<Point> algo (Point start, Point end, int sizeTab);
+	friend std::vector<Point> algo (int**& tab, Point& start, Point& end, int sizeTab);
 };
 
 #endif
