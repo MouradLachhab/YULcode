@@ -12,7 +12,7 @@ class Visualizer
         Visualizer();
         ~Visualizer();
         void ChargerCarte(Carte newCarte); 
-        void AfficherChemin();
+        void AfficherChemin(std::vector<Coord> chemin);
 
     private:
         Mat* carte;

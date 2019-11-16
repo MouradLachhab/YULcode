@@ -20,6 +20,7 @@ class Coord {
 	friend class Employer;
 	friend class Salle;
 	friend class Carte;
+	friend class Visualizer;
 };
 
 #endif
