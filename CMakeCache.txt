@@ -130,7 +130,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=DisplayImage
+CMAKE_PROJECT_NAME:STATIC=main
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -189,6 +189,12 @@ DisplayImage_SOURCE_DIR:STATIC=/home/mmou/Documents/YULcode
 
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
+
+//Value Computed by CMake
+main_BINARY_DIR:STATIC=/home/mmou/Documents/YULcode
+
+//Value Computed by CMake
+main_SOURCE_DIR:STATIC=/home/mmou/Documents/YULcode
 
 
 ########################

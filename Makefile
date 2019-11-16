@@ -111,44 +111,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DisplayImage
+# Target rules for targets named main
 
 # Build rule for target.
-DisplayImage: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DisplayImage
-.PHONY : DisplayImage
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-DisplayImage/fast:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/build
-.PHONY : DisplayImage/fast
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
-DisplayImage.o: DisplayImage.cpp.o
+main.o: main.cpp.o
 
-.PHONY : DisplayImage.o
+.PHONY : main.o
 
 # target to build an object file
-DisplayImage.cpp.o:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o
-.PHONY : DisplayImage.cpp.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-DisplayImage.i: DisplayImage.cpp.i
+main.i: main.cpp.i
 
-.PHONY : DisplayImage.i
+.PHONY : main.i
 
 # target to preprocess a source file
-DisplayImage.cpp.i:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/DisplayImage.cpp.i
-.PHONY : DisplayImage.cpp.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-DisplayImage.s: DisplayImage.cpp.s
+main.s: main.cpp.s
 
-.PHONY : DisplayImage.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-DisplayImage.cpp.s:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/DisplayImage.cpp.s
-.PHONY : DisplayImage.cpp.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+visualizer.o: visualizer.cpp.o
+
+.PHONY : visualizer.o
+
+# target to build an object file
+visualizer.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/visualizer.cpp.o
+.PHONY : visualizer.cpp.o
+
+visualizer.i: visualizer.cpp.i
+
+.PHONY : visualizer.i
+
+# target to preprocess a source file
+visualizer.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/visualizer.cpp.i
+.PHONY : visualizer.cpp.i
+
+visualizer.s: visualizer.cpp.s
+
+.PHONY : visualizer.s
+
+# target to generate assembly for a file
+visualizer.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/visualizer.cpp.s
+.PHONY : visualizer.cpp.s
 
 # Help Target
 help:
@@ -157,11 +184,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... DisplayImage"
+	@echo "... main"
 	@echo "... edit_cache"
-	@echo "... DisplayImage.o"
-	@echo "... DisplayImage.i"
-	@echo "... DisplayImage.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... visualizer.o"
+	@echo "... visualizer.i"
+	@echo "... visualizer.s"
 .PHONY : help
 
 
