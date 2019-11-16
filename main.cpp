@@ -17,13 +17,13 @@ int main(int argc, char** argv )
     Visualizer v;
 	/* Création Rez-De-Chaussé*/
 	vector<Coord> porteRdc;
-	porteRdc.push_back(Coord(0,3));
-	Salle rdc(Coord(0,0),Coord(Carte::longueur,Carte::hauteur),porteRdc);
+	porteRdc.push_back(Coord(3,0));
+	Salle rdc(Coord(0,0),Coord(Carte::longueur - 1,Carte::hauteur - 1),porteRdc);
 
 	/* Création Open Space 1*/
 	vector<Coord> porteOpenS_1;
-	porteOpenS_1.push_back(Coord(0,3));
-	Salle openSpace_1(Coord(0,6),Coord(6,12),porteOpenS_1);
+	porteOpenS_1.push_back(Coord(9,6));
+	Salle openSpace_1(Coord(6,0),Coord(12,6),porteOpenS_1);
 
 	rdc.DessinerSalle(carte);
 	openSpace_1.DessinerSalle(carte);

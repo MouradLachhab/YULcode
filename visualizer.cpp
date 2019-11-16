@@ -4,14 +4,14 @@ Visualizer::Visualizer() {}
 
 Visualizer::~Visualizer()
 {
-    if (carte)
+    if (carte != NULL)
         delete carte;
 }
 
 // Charger depuis une carte
 void Visualizer::ChargerCarte(Carte newCarte)
 {
-    carte = new Mat(newCarte.hauteur, newCarte.longueur, CV_8UC3, Scalar(100 ,100, 100));
+    carte = new Mat(newCarte.hauteur* 10, newCarte.longueur*10, CV_8UC3, Scalar(100 ,100, 100));
 
     for (int i = 0; i < newCarte.hauteur; ++i)
     {
@@ -19,8 +19,8 @@ void Visualizer::ChargerCarte(Carte newCarte)
         {
             if (newCarte.tableau[i][j])
             {
-                Rect rect(j,i,1,1);
-                rectangle(*carte, rect, Scalar(255, 0 ,0),  -1);
+                Rect rect(j*10,i*10,10,10);
+                rectangle(*carte, rect, Scalar(0, 0 ,0),  -1);
             }
         }
     }

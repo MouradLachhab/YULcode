@@ -9,17 +9,17 @@ Salle::Salle(Coord _haut_gauche, Coord _bas_droite, vector<Coord>& _portes)
 
 void Salle::DessinerSalle(Carte& carte)
 {
-	for (int i = haut_gauche.x ; i < bas_droite.x ; i++ )
-		carte.tableau[i][haut_gauche.y] = 1;
+	for (int i = haut_gauche.x ; i <= bas_droite.x ; i++ )
+		carte.tableau[haut_gauche.y][i] = 1;
 
-	for (int i = haut_gauche.x ; i < bas_droite.x ; i++ )
-		carte.tableau[i][bas_droite.y] = 1;
+	for (int i = haut_gauche.x ; i <= bas_droite.x ; i++ )
+		carte.tableau[bas_droite.y][i] = 1;
 
-	for (int i = haut_gauche.y ; i < bas_droite.y ; i++ )
-		carte.tableau[haut_gauche.x][i] = 1;
+	for (int i = haut_gauche.y ; i <= bas_droite.y ; i++ )
+		carte.tableau[i][haut_gauche.x] = 1;
 
-	for (int i = haut_gauche.y ; i < bas_droite.y ; i++ )
-		carte.tableau[bas_droite.x][i] = 1;
+	for (int i = haut_gauche.y ; i <= bas_droite.y ; i++ )
+		carte.tableau[i][bas_droite.x] = 1;
 
 
 	for ( int i = 0 ; i < portes.size() ; ++i )
