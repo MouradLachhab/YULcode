@@ -4,16 +4,36 @@
 using namespace cv;
 
 Visualizer::Visualizer() {}
-Visualizer::~Visualizer() {}
 
-void Visualizer::ChargerCarte()
+Visualizer::~Visualizer()
 {
-    Mat image(500, 1000, CV_8UC3, Scalar(0 ,0, 0));
+    if (carte)
+        delete carte;
+}
 
-    Rect test(0,0,50,50);
-    rectangle(image, test, Scalar(255, 0 ,0));
+// Charger depuis une carte
+void Visualizer::ChargerCarte(Carte newCarte)
+{
+    carte = new Mat(newCarte.hauteur, newCarte.longueur, CV_8UC3, Scalar(100 ,100, 100));
+
+    for (int i = 0; i < newCarte.hauteur; ++i)
+    {
+        for (int j = 0; j < newCarte.longueur; ++j)
+        {
+            if (newCarte.tableau[i][j])
+            {
+                Rect rect(j,i,1,1);
+                rectangle(*carte, rect, Scalar(255, 0 ,0),  -1);
+
+            }
+
+            
+        }
+    }
+
+    // TODO: Remove this Display
     namedWindow("Display Image", WINDOW_AUTOSIZE );
-    imshow("Display Image", image);
+    imshow("Display Image", *carte);
     waitKey(0);
 }
 void Visualizer::AfficherChemin()

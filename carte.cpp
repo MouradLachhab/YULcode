@@ -2,9 +2,9 @@
 
 Carte::Carte()
 {
-	for ( int i = 0 ; i < longueur ; ++i )
+	for ( int i = 0 ; i < hauteur ; ++i )
 	{
-		for ( int j = 0 ; j < largeur ; ++j )
+		for ( int j = 0 ; j < longueur ; ++j )
 		{
 			tableau[i][j] = 0;
 		}

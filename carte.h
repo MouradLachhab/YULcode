@@ -8,11 +8,13 @@
 class Carte {
 	public:
 		Carte();
-	private:
-		static const int longueur = 30;
-		static const int largeur = 20;
-		int tableau[longueur][largeur];
 
+		static const int longueur = 30;
+		static const int hauteur = 20;
+	private:
+		int tableau[hauteur][longueur];
+
+	friend class Visualizer;
 	friend class Salle;
 };
 
