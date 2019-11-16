@@ -10,9 +10,8 @@
 
 class Plan {
 	public:
-		Plan(Carte& _plan);
-		void DessinerPlan1();
-		Carte plan;
+		Plan();
+		void static DessinerPlan1(Carte&);
 };
 
 #endif

@@ -258,6 +258,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+plan.o: plan.cpp.o
+
+.PHONY : plan.o
+
+# target to build an object file
+plan.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/plan.cpp.o
+.PHONY : plan.cpp.o
+
+plan.i: plan.cpp.i
+
+.PHONY : plan.i
+
+# target to preprocess a source file
+plan.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/plan.cpp.i
+.PHONY : plan.cpp.i
+
+plan.s: plan.cpp.s
+
+.PHONY : plan.s
+
+# target to generate assembly for a file
+plan.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/plan.cpp.s
+.PHONY : plan.cpp.s
+
 salle.o: salle.cpp.o
 
 .PHONY : salle.o
@@ -336,6 +363,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... plan.o"
+	@echo "... plan.i"
+	@echo "... plan.s"
 	@echo "... salle.o"
 	@echo "... salle.i"
 	@echo "... salle.s"

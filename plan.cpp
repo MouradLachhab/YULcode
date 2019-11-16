@@ -7,11 +7,10 @@
 
 using namespace std;
 
-Plan::Plan(Carte& _plan)
-: plan(_plan)
+Plan::Plan()
 {}
 
-void Plan::DessinerPlan1()
+void Plan::DessinerPlan1(Carte& plan)
 {
 	vector<Coord> porteRdc;
 	porteRdc.push_back(Coord(3,0));

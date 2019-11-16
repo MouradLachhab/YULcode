@@ -1,6 +1,6 @@
 #include "visualizer.h"
 
-#define TAILLE_CASE 10
+#define TAILLE_CASE 50
 
 Visualizer::Visualizer() {}
 
@@ -29,10 +29,13 @@ void Visualizer::ChargerCarte(Carte newCarte)
 }
 void Visualizer::AfficherChemin(std::vector<Coord> chemin)
 {
+    circle(*carte, Point(3*TAILLE_CASE + TAILLE_CASE/2,0*TAILLE_CASE + TAILLE_CASE/2), TAILLE_CASE/4, Scalar( 255, 0 ,0),  -1);
 
+    printf("size of path: %d", (int)chemin.size());
     for (int i = 0; i < chemin.size(); ++i)
     {
-        circle(*carte, Point(chemin[i].x * TAILLE_CASE, chemin[i].y * TAILLE_CASE), TAILLE_CASE/2, Scalar( 255, 0 ,0),  -1);
+        printf("x: %d y: %d \n", chemin[i].x, chemin[i].y);
+        circle(*carte, Point(chemin[i].x * TAILLE_CASE + TAILLE_CASE/2, chemin[i].y * TAILLE_CASE + TAILLE_CASE/4), TAILLE_CASE/4, Scalar( 255, 0 ,0),  -1);
     }
     
     namedWindow("Display Image", WINDOW_AUTOSIZE );
