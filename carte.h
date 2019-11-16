@@ -8,12 +8,10 @@
 #include "case.h"
 #include <iostream>
 
-//using namespace std;
-
 class Carte {
 	public:
 		Carte();
-		std::vector<Coord> algo(int**& tab, Coord& start, Coord& end, int sizeTab);
+		std::vector<Coord> algo(Coord& start, Coord& end, int sizeTab);
 		static const int longueur = 30;
 		static const int hauteur = 20;
 	private:
