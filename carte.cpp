@@ -13,7 +13,7 @@ Carte::Carte()
 	}
 }
 
-vector<Coord> Carte::algo(int**& tab, Coord& start, Coord& end, int sizeTab) {
+vector<Coord> Carte::algo(Coord& start, Coord& end, int sizeTab) {
 	int n = sizeTab;
 	int m = sizeTab;
 
@@ -62,7 +62,7 @@ vector<Coord> Carte::algo(int**& tab, Coord& start, Coord& end, int sizeTab) {
 		for (int i = 0; i < n; i += 1) {
 			for (int j = 0; j < m; j += 1) {
 				if (etage[i][j].point.isNeighbour(c.point) &&
-					tab[etage[i][j].point.x][etage[i][j].point.y] != 1 &&
+					this->tableau[etage[i][j].point.x][etage[i][j].point.y] != 1 &&
 					!visited[etage[i][j].point.x][etage[i][j].point.y]) {
 					if (tree.find(etage[i][j]) == tree.end()) {
 						etage[i][j].cost = c.cost + 1;
