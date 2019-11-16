@@ -24,10 +24,7 @@ void Visualizer::ChargerCarte(Carte newCarte)
             {
                 Rect rect(j,i,1,1);
                 rectangle(*carte, rect, Scalar(255, 0 ,0),  -1);
-
             }
-
-            
         }
     }
 

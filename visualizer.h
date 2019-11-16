@@ -12,7 +12,7 @@ class Visualizer
         void AfficherChemin();
 
     private:
-        Mat* carte;
+        cv::Mat* carte;
 };
 
 
