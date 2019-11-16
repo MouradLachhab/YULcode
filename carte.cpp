@@ -13,9 +13,9 @@ Carte::Carte()
 	}
 }
 
-vector<Coord> Carte::algo(Coord& start, Coord& end, int sizeTab) {
-	int n = sizeTab;
-	int m = sizeTab;
+vector<Coord> Carte::algo(Coord& start, Coord& end) {
+	int n = hauteur;
+	int m = longueur;
 
 	Case** etage;
 	etage = new Case*[n];
