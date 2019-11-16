@@ -1,13 +1,13 @@
-# include "case.h";
+#include "case.h"
 #include <math.h>
 
-Case::Case(const Point& p, int c, int e) : point(p), cost(c), estimation(e) {}
+Case::Case(const Coord& p, int c, int e) : point(p), cost(c), estimation(e) {}
 
-int Case::heuristique(const Point& c, const Point& g) const {
+int Case::heuristique(const Coord& c, const Coord& g) const {
 	return abs(c.x - g.x) + abs(c.y - g.y);
 }
 
-void Case::refineEstimation(const Point& end) {
+void Case::refineEstimation(const Coord& end) {
 	this->estimation = this->cost + this->heuristique(this->point, end);
 }
 

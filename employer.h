@@ -1,7 +1,7 @@
 #ifndef __EMPLOYER_H__
 #define __EMPLOYER_H__
 
-#include "point.h"
+#include "coord.h"
  
 using namespace std;
 
@@ -17,8 +17,8 @@ class Employer {
 	
 	public:
 		Employer(int _id, string _name, int _codeCouleur);
+		Coord position;
 	private:
-		Point position;
 		int id;
 		string name;
 		//couleur coloration;

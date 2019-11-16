@@ -1,7 +1,10 @@
 #ifndef VISUALIZER_H
 #define VISUALIZER_H
 
+#include <opencv2/opencv.hpp>
 #include "carte.h"
+
+using namespace cv;
 
 class Visualizer
 {
@@ -12,7 +15,7 @@ class Visualizer
         void AfficherChemin();
 
     private:
-        cv::Mat* carte;
+        Mat* carte;
 };
 
 

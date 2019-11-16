@@ -1,7 +1,4 @@
 #include "visualizer.h"
-#include <opencv2/opencv.hpp>
-
-using namespace cv;
 
 Visualizer::Visualizer() {}
 

@@ -2,22 +2,22 @@
 #define __CASE_H__
 
 #include <iostream>
-#include "point.h"
+#include "coord.h"
 
 class Case {
 	public:
 		Case() {}
-		Case(const Point& p, int c, int e);
-		int heuristique(const Point& c, const Point& g) const;
-		void refineEstimation(const Point& end);
+		Case(const Coord& p, int c, int e);
+		int heuristique(const Coord& c, const Coord& g) const;
+		void refineEstimation(const Coord& end);
 		bool operator<(const Case&) const;
 
 	private:
-		Point point;
+		Coord point;
 		int cost;
 		int estimation;
 
-	friend std::vector<Point> algo (int**& tab, Point& start, Point& end, int sizeTab);
+	friend class Carte;
 };
 
 #endif

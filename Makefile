@@ -123,6 +123,141 @@ main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+algorithm.o: algorithm.cpp.o
+
+.PHONY : algorithm.o
+
+# target to build an object file
+algorithm.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/algorithm.cpp.o
+.PHONY : algorithm.cpp.o
+
+algorithm.i: algorithm.cpp.i
+
+.PHONY : algorithm.i
+
+# target to preprocess a source file
+algorithm.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/algorithm.cpp.i
+.PHONY : algorithm.cpp.i
+
+algorithm.s: algorithm.cpp.s
+
+.PHONY : algorithm.s
+
+# target to generate assembly for a file
+algorithm.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/algorithm.cpp.s
+.PHONY : algorithm.cpp.s
+
+carte.o: carte.cpp.o
+
+.PHONY : carte.o
+
+# target to build an object file
+carte.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/carte.cpp.o
+.PHONY : carte.cpp.o
+
+carte.i: carte.cpp.i
+
+.PHONY : carte.i
+
+# target to preprocess a source file
+carte.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/carte.cpp.i
+.PHONY : carte.cpp.i
+
+carte.s: carte.cpp.s
+
+.PHONY : carte.s
+
+# target to generate assembly for a file
+carte.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/carte.cpp.s
+.PHONY : carte.cpp.s
+
+case.o: case.cpp.o
+
+.PHONY : case.o
+
+# target to build an object file
+case.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/case.cpp.o
+.PHONY : case.cpp.o
+
+case.i: case.cpp.i
+
+.PHONY : case.i
+
+# target to preprocess a source file
+case.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/case.cpp.i
+.PHONY : case.cpp.i
+
+case.s: case.cpp.s
+
+.PHONY : case.s
+
+# target to generate assembly for a file
+case.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/case.cpp.s
+.PHONY : case.cpp.s
+
+coord.o: coord.cpp.o
+
+.PHONY : coord.o
+
+# target to build an object file
+coord.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/coord.cpp.o
+.PHONY : coord.cpp.o
+
+coord.i: coord.cpp.i
+
+.PHONY : coord.i
+
+# target to preprocess a source file
+coord.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/coord.cpp.i
+.PHONY : coord.cpp.i
+
+coord.s: coord.cpp.s
+
+.PHONY : coord.s
+
+# target to generate assembly for a file
+coord.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/coord.cpp.s
+.PHONY : coord.cpp.s
+
+employer.o: employer.cpp.o
+
+.PHONY : employer.o
+
+# target to build an object file
+employer.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/employer.cpp.o
+.PHONY : employer.cpp.o
+
+employer.i: employer.cpp.i
+
+.PHONY : employer.i
+
+# target to preprocess a source file
+employer.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/employer.cpp.i
+.PHONY : employer.cpp.i
+
+employer.s: employer.cpp.s
+
+.PHONY : employer.s
+
+# target to generate assembly for a file
+employer.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/employer.cpp.s
+.PHONY : employer.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -149,6 +284,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+salle.o: salle.cpp.o
+
+.PHONY : salle.o
+
+# target to build an object file
+salle.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/salle.cpp.o
+.PHONY : salle.cpp.o
+
+salle.i: salle.cpp.i
+
+.PHONY : salle.i
+
+# target to preprocess a source file
+salle.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/salle.cpp.i
+.PHONY : salle.cpp.i
+
+salle.s: salle.cpp.s
+
+.PHONY : salle.s
+
+# target to generate assembly for a file
+salle.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/salle.cpp.s
+.PHONY : salle.cpp.s
 
 visualizer.o: visualizer.cpp.o
 
@@ -186,9 +348,27 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... main"
 	@echo "... edit_cache"
+	@echo "... algorithm.o"
+	@echo "... algorithm.i"
+	@echo "... algorithm.s"
+	@echo "... carte.o"
+	@echo "... carte.i"
+	@echo "... carte.s"
+	@echo "... case.o"
+	@echo "... case.i"
+	@echo "... case.s"
+	@echo "... coord.o"
+	@echo "... coord.i"
+	@echo "... coord.s"
+	@echo "... employer.o"
+	@echo "... employer.i"
+	@echo "... employer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... salle.o"
+	@echo "... salle.i"
+	@echo "... salle.s"
 	@echo "... visualizer.o"
 	@echo "... visualizer.i"
 	@echo "... visualizer.s"

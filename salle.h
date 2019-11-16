@@ -1,7 +1,7 @@
 #ifndef __SALLE_H__
 #define __SALLE_H__
 
-#include "point.h"
+#include "coord.h"
 #include "carte.h"
 //#include <iostream>
 //#include <vector>
@@ -10,13 +10,13 @@ using namespace std;
 
 class Salle {
 	public:
-		Salle(Point _haut_gauche, Point _bas_droite,vector<Point>& _portes);
+		Salle(Coord _haut_gauche, Coord _bas_droite,vector<Coord>& _portes);
 		void DessinerSalle(Carte&);
 	private:
-		Point haut_gauche;
-		Point bas_droite;
-		Point centre;
-		vector<Point> portes;
+		Coord haut_gauche;
+		Coord bas_droite;
+		Coord centre;
+		vector<Coord> portes;
 		//void calculerCentre();
 		
 };
