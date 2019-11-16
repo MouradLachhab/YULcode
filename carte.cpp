@@ -22,6 +22,14 @@ vector<Coord> Carte::algo(Coord& start, Coord& end, int sizeTab) {
 	for (int i = 0; i < n; i += 1) {
 		etage[i] = new Case[m];
 	}
+	for (int i = 0; i < n; i += 1) {
+		for (int j = 0; j < m; j += 1) {
+			etage[i][j].point.x = i;
+			etage[i][j].point.y = j;
+			etage[i][j].cost = 9999;
+			etage[i][j].estimation = 9999;
+		}
+	}
 
 	set<Case> tree;
 
