@@ -24,8 +24,8 @@ vector<Coord> Carte::algo(Coord& start, Coord& end) {
 	}
 	for (int i = 0; i < n; i += 1) {
 		for (int j = 0; j < m; j += 1) {
-			etage[i][j].point.x = i;
-			etage[i][j].point.y = j;
+			etage[i][j].point.y = i;
+			etage[i][j].point.x = j;
 			etage[i][j].cost = 9999;
 			etage[i][j].estimation = 9999;
 		}
@@ -58,8 +58,8 @@ vector<Coord> Carte::algo(Coord& start, Coord& end) {
 		if (c.point == end) {
 			vector<Coord> result;
 			result.push_back(end);
-			while (map.find(end) != map.end()) {
-				Coord tmp = map[end];
+			Coord tmp = map[end];
+			while (map.find(tmp) != map.end()) {
 				result.push_back(tmp);
 				tmp = map[tmp];
 			}
@@ -70,7 +70,7 @@ vector<Coord> Carte::algo(Coord& start, Coord& end) {
 		for (int i = 0; i < n; i += 1) {
 			for (int j = 0; j < m; j += 1) {
 				if (etage[i][j].point.isNeighbour(c.point) &&
-					this->tableau[etage[i][j].point.x][etage[i][j].point.y] != 1 &&
+					this->tableau[etage[i][j].point.y][etage[i][j].point.x] != 1 &&
 					!visited[etage[i][j].point.y][etage[i][j].point.x]) {
 					if (tree.find(etage[i][j]) == tree.end()) {
 						etage[i][j].cost = c.cost + 1;
