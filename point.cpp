@@ -4,7 +4,7 @@
 
 Point::Point(const Point& point) : x(point.x), y(point.y) {}
 
-Point::Point(double _x, double _y)  : x(_x), y(_y) {}
+Point::Point(int _x, int _y)  : x(_x), y(_y) {}
 
 bool Point::isNeighbour(const Point& point) const {
 	if (this->x + 1 == point.x && this->y == point.y)
