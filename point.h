@@ -18,6 +18,7 @@ class Point {
 	friend std::ostream& operator << (std::ostream&, const Point&);
 	friend std::istream& operator >> (std::istream&, Point&);
 	friend class Case;
+	friend vector<Point> algo (Point start, Point end, int sizeTab);
 };
 
 #endif

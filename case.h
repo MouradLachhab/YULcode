@@ -6,9 +6,11 @@
 
 class Case {
 	public:
-		Case(Point p, int c, int e);
-		int heuristique(Point c, Point g);
-		void refineEstimation(Point end);
+		Case() {}
+		Case(const Point& p, int c, int e);
+		int heuristique(const Point& c, const Point& g) const;
+		void refineEstimation(const Point& end);
+		bool operator<(const Case&) const;
 
 	private:
 		Point point;
